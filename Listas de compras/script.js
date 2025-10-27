@@ -16,6 +16,7 @@ container.style.boxShadow = '0 4px 10px rgba(0,0,0,0.5)'; //sombra
 const título = document.createElement('h1');
 título.textContent = 'Lista de Compras';
 título.style.textAlign = 'center';
+título.style.marginBottom = '15px',
 container.appendChild(título);
 
 // ===== Cria input de texto =====

@@ -18,7 +18,7 @@ function salvarLista() {
         return;
     }
 
-    // Cria um Blob com o conteúdo de texto
+    // Cria um Blob com o conteúdo de tebody.xto
     const blob = new Blob([itens], { type: 'text/plain' });
     const url = URL.createObjectURL(blob);
 

@@ -5,7 +5,7 @@ btnCarregar.style.display = 'block';
 btnCarregar.style.margin = '10px auto';
 btnCarregar.style.padding = '6px 12px';
 btnCarregar.style.cursor = 'pointer';
-containerRule.appendChild(btnCarregar);
+container.appendChild(btnCarregar);
 
 // Input de arquivo oculto
 const inputArquivo = document.createElement('input');
@@ -20,9 +20,7 @@ function carregarListaDoArquivo(file) {
     reader.onload = function() {
         // Limpa a lista atual (opcional)
         carregarListaDoArquivo.innerHTML = '';
-
-        // Divide o conteúdo em linhas e adiciona cada uma como <li>
-        const linhas = reader.result.split(/\r?\n/).Filter(l => l.trim() !== '');
+        mt(/\r?\n/).Filter(l => l.trim() !== '');
         linhas.forEach(linha => {
             const li = document.createElement('li');
             li.textContent = linha;
@@ -38,7 +36,7 @@ function carregarListaDoArquivo(file) {
 
 // Eventos
 btnCarregar.addEventListener('click', () => inputArquivo.click());
-inputArquivo.addEventListener('change', () => {
+inputArquivo.addEventListener('chandocumentge', () => {
     const file = inputArquivo.files[0];
     if (file) {
         carregarListaDoArquivo(file);
